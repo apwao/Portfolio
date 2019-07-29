@@ -1,0 +1,412 @@
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Work+Sans:400,500,600,700');
+
+/* Import CSS */
+
+@import 'css/bootstrap/bootstrap.min.css';
+@import 'css/others/animate.css';
+@import 'css/others/magnific-popup.css';
+@import 'css/others/owl.carousel.min.css';
+@import 'css/others/font-awesome.min.css';
+@import 'css/others/pe-icon-7-stroke.css';
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fafafa;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #000;
+    line-height: 1.3;
+}
+
+p {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 16px;
+    line-height: 1.9;
+    font-weight: 400;
+}
+
+.section-padding-150 {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.section-padding-150-0 {
+    padding-top: 150px;
+    padding-bottom: 0;
+}
+
+.section-padding-0-150 {
+    padding-top: 0;
+    padding-bottom: 150px;
+}
+
+.section-padding-120-0 {
+    padding-top: 120px;
+    padding-bottom: 0;
+}
+
+.section-padding-0-120 {
+    padding-top: 0;
+    padding-bottom: 120px;
+}
+
+.section-padding-100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.section-padding-100-0 {
+    padding-top: 100px;
+    padding-bottom: 0;
+}
+
+.section-padding-0-100 {
+    padding-top: 0;
+    padding-bottom: 100px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+.pt-200 {
+    padding-top: 200px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    font-weight: 600;
+    outline: none;
+}
+
+li {
+    list-style: none;
+}
+
+.section-heading {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 70px;
+}
+
+.section-heading h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+.bg-img {
+    background-position: center center;
+    background-size: cover;
+}
+
+.bg-overlay {
+    position: relative;
+    z-index: 1;
+}
+
+.bg-overlay:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.bg-gray {
+    background-color: #f9f9f9;
+}
+/* Header */
+
+.header_area {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    height: 100px;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    -webkit-transition-duration: 700ms;
+    transition-duration: 700ms;
+}
+
+.sticky .header_area {
+    background-color: rgba(0, 0, 0, 0.85);
+    height: 70px;
+    z-index: 9999;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    margin-right: 0;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+    color: #fff;
+    font-weight: 700;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 15px;
+    padding-left: 15px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-item.active .nav-link {
+    color: grey;
+}
+/* Hero Area CSS */
+
+.header-slides {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    background-position: center center;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.single-slides {
+    position: relative;
+    z-index: 1;
+    height: 770px;
+    width: 100%;
+}
+
+.single-slides:after {
+    position: absolute;
+    width: calc(50% - 112px);
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: '';
+    z-index: -1;
+}
+
+.single-slides:before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+}
+
+.single-slides-content h2 {
+    font-size: 52px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.single-slides-content p {
+    color: #fff;
+    margin-bottom: 70px;
+}
+
+/* About Me */
+
+.about-me {
+    overflow-x: hidden;
+}
+
+.about-me-pic {
+    box-shadow: 3px 5px 45px rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 1;
+}
+
+.about-me-pic > img {
+    width: 100%;
+}
+
+.about-me-content span {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: gray;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    margin-bottom: 30px;
+    display: block;
+}
+
+.about-me-content > p {
+    margin-bottom: 0;
+}
+/* projects */
+
+.myprojects {
+    padding-bottom: 200px;
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden;
+    font-size: 12px;
+    text-transform: lowercase;
+    letter-spacing: 2px;
+    color: gray;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    margin-bottom: 30px;
+    display: block;
+}
+
+
+/* Skills */
+
+.skills {
+    padding-bottom: 200px;
+}
+
+.skills .section-heading {
+    margin-bottom: 0;
+}
+
+/* Contact */
+
+
+.mycontact-form-area,
+.contact-form-area {
+    width: calc(50% - 100px);
+    /* width: 100%; */
+}
+
+.mycontact-form,
+.contact-form {
+    width: 390px;
+    margin-right: 67.5px;
+}
+
+
+
+/* Footer */
+
+.footer-area {
+    background-color: #333333;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-area .navbar-brand {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.footer-text > p {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+/* contact breadcrumb */
+
+.breadcumb-area {
+    position: relative; 
+    z-index: 1;
+    height: 555px;
+    /* width: 100%; */
+
+}
+
+.breadcumb-content {
+    padding-top: 100px;
+}
+
+.breadcumb-content h2 {
+    color: #fff;
+    font-size: 60px;
+    line-height: 1;
+    margin-bottom: 70px;
+}
+
+.breadcumb-area:before {
+    width: calc(50% - 112px);
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    content: "";
+    position: absolute;
+}
+
+
+
+
+/* Contact Area CSS */
+
+.breadcumb-content > p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.breadcumb-content p i {
+    width: 35px;
+}
+
+.breadcumb-content p a {
+    color: #fff;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.my-btn {
+    font-family: 'Work Sans', sans-serif;
+    min-width: 180px;
+    height: 54px;
+    border: 1px solid #b2b2b2;
+    font-weight: 500;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 0 30px;
+    line-height: 52px;
+    color: #000;
+}
+
+.my-btn:hover,
+.my-btn:focus {
+    color: gray;
+    font-weight: 500;
+}
+
+
