@@ -306,13 +306,13 @@ li {
 
 .mycontact-form-area,
 .contact-form-area {
-    width: calc(50% - 100px);
-    /* width: 100%; */
+    /* width: calc(50% - 100px); */
+    width: 100%;
 }
 
 .mycontact-form,
 .contact-form {
-    width: 390px;
+    width: 100%;
     margin-right: 67.5px;
 }
 
@@ -340,10 +340,10 @@ li {
 /* contact breadcrumb */
 
 .breadcumb-area {
-    position: relative; 
-    z-index: 1;
+    /* position: relative; 
+    z-index: 1; */
     height: 555px;
-    /* width: 100%; */
+    width: 100%; 
 
 }
 
@@ -392,7 +392,8 @@ li {
 
 .my-btn {
     font-family: 'Work Sans', sans-serif;
-    min-width: 180px;
+    /* min-width: 180px; */
+    width: 140px;
     height: 54px;
     border: 1px solid #b2b2b2;
     font-weight: 500;
